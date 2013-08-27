@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SEMObjects" EntityNamespace="HostingService.Test.Databases.SEMObjects" ContextNamespace="HostingService.Test.Databases.SEMObjects" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.tblAdCenterAccount" Member="TblAdCenterAccount">
+    <Type Name="TblAdCenterAccount">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="AccountNumber" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SalesHouseCustomerId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="BillToCustomerId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AgencyContactName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="LastDownloadDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CountryCode" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="CurrencyType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FinancialStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Language" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Number" Type="System.String" DbType="VarChar(1024)" CanBeNull="true" />
+      <Column Name="ParentCustomerId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PaymentMethodId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="PaymentMethodType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PrimaryUserId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TimeZone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AgencyContractName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="AgencyCustomerId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAdCenterAdGroup" Member="TblAdCenterAdGroup">
+    <Type Name="TblAdCenterAdGroup">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AdDistribution" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BiddingModel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CashbackInfo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ContentMatchBid" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LanguageAndRegion" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="NegativeKeywords" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NegativeSiteUrls" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="PricingModel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SearchMatchBid" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Target" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Network" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAdCenterCampaign" Member="TblAdCenterCampaign">
+    <Type Name="TblAdCenterCampaign">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BudgetType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CashBackInfo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ConversionTrackingEnabled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ConversionTrackingScript" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DailyBudget" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DaylightSaving" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MonthlyBudget" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TimeZone" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="NegativeKeywords" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NegativeSiteUrls" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Target" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAdCenterKeyword" Member="TblAdCenterKeyword">
+    <Type Name="TblAdCenterKeyword">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalCampaignId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MatchType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ContentMatchBid" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NegativeKeywords" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Param1" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Param2" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Param3" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="OverridePriority" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CashBackInfo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="EditorialStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SearchMatchBid" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="BroadMatchBid" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ExactMatchBid" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PhraseMatchBid" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAdCenterSitePlacement" Member="TblAdCenterSitePlacement">
+    <Type Name="TblAdCenterSitePlacement">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalCampaignId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bid" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PlacementId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Url" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAdCenterTextAd" Member="TblAdCenterTextAd">
+    <Type Name="TblAdCenterTextAd">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalCampaignId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Text" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EditorialStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DisplayUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="DestinationUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="EnableTracking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblAdCenterUser" Member="TblAdCenterUser">
+    <Type Name="TblAdCenterUser">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="UserAccessKey" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="ApplicationToken" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="DeveloperToken" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="CustomerId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblFacebookAccount" Member="TblFacebookAccount">
+    <Type Name="TblFacebookAccount">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime2(7)" CanBeNull="true" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Currency" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TimeZone" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DailyAccountLimit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastDownloadDate" Type="System.DateTime" DbType="DateTime2(7)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblFacebookAdGroup" Member="TblFacebookAdGroup">
+    <Type Name="TblFacebookAdGroup">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime2(7)" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AdId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="BidType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaxBid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="OriginalStatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DisapproveReason" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="EnableTracking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblFacebookCampaign" Member="TblFacebookCampaign">
+    <Type Name="TblFacebookCampaign">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime2(7)" CanBeNull="true" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Budget" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="BudgetType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime2(7)" CanBeNull="true" />
+      <Column Name="StopTime" Type="System.DateTime" DbType="DateTime2(7)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblFacebookConnection" Member="TblFacebookConnection">
+    <Type Name="TblFacebookConnection">
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Group" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GroupType" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="ImagePath" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ImageUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="Tabs" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="TabsUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="LastPost" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LogoUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="LogoPath" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="SyncStatus" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime2(7)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblFacebookCreative" Member="TblFacebookCreative">
+    <Type Name="TblFacebookCreative">
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AdId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ConnectionId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Body" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ImageUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="ImagePath" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LinkType" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LinkUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="PreviewUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="AutoUpdate" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="StoryId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CreativeId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblFacebookTargeting" Member="TblFacebookTargeting">
+    <Type Name="TblFacebookTargeting">
+      <Column Name="localId" Member="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AdId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Countries" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="State" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Cities" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Radius" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MinAge" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="MaxAge" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Genders" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="KeywordsTarget" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="EducationStatuses" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CollegeNetworks" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CollegeMajors" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CollegeYearMin" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CollegeYearMax" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="WorkNetworks" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="RelationshipStatuses" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="InterestedIn" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Locales" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CreativeConnections" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ExcludeConnections" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FriendsOfConnections" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="BroadAge" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="EnableTracking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TargetingEstimation" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="CpcMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CpcMedian" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CpcMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CpmMin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CpmMedian" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CpmMax" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserAdClusters" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Zips" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblFacebookUser" Member="TblFacebookUser">
+    <Type Name="TblFacebookUser">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime2(7)" CanBeNull="true" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ApiKey" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ApplicationSecret" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ApplicationId" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="SessionSecret" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="SessionKey" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Accesstoken" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ImagePath" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ImageUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGoogleAccountInfo" Member="TblGoogleAccountInfo">
+    <Type Name="TblGoogleAccountInfo">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="billingAddress" Member="BillingAddress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="currencyCode" Member="CurrencyCode" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="customerId" Member="CustomerId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="customerIdSpecified" Member="CustomerIdSpecified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="descriptiveName" Member="DescriptiveName" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="emailPromotionsPreferences" Member="EmailPromotionsPreferences" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="languagePreference" Member="LanguagePreference" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="primaryAddress" Member="PrimaryAddress" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="primaryBusinessCategory" Member="PrimaryBusinessCategory" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="timeZoneEffectiveDate" Member="TimeZoneEffectiveDate" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="timeZoneEffectiveDateSpecified" Member="TimeZoneEffectiveDateSpecified" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="timeZoneId" Member="TimeZoneId" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="clientEmail" Member="ClientEmail" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="SearchType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsContentType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastDownloadDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGoogleAdGroup" Member="TblGoogleAdGroup">
+    <Type Name="TblGoogleAdGroup">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Member="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="keywordContentMaxCpc" Member="KeywordContentMaxCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="keywordMaxCpc" Member="KeywordMaxCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="maxCpa" Member="MaxCpa" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="name" Member="Name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="proxyKeywordMaxCpc" Member="ProxyKeywordMaxCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="siteMaxCpc" Member="SiteMaxCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="siteMaxCpm" Member="SiteMaxCpm" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="status" Member="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bids" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGoogleCampaign" Member="TblGoogleCampaign">
+    <Type Name="TblGoogleCampaign">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Member="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="budgetPeriod" Member="BudgetPeriod" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="budgetAmount" Member="BudgetAmount" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="endDay" Member="EndDay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="geoTargeting" Member="GeoTargeting" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="languageTargeting" Member="LanguageTargeting" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="name" Member="Name" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="schedule" Member="Schedule" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="startDay" Member="StartDay" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="status" Member="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SearchType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BiddingStrategy" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ServingStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="adServingOptimizationStatus" Member="AdServingOptimizationStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="autoKeywordMatchingStatus" Member="AutoKeywordMatchingStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="FrequencyCap" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Targeting" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="NetworkTargeting" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGoogleCampaignNegativeKeyword" Member="TblGoogleCampaignNegativeKeyword">
+    <Type Name="TblGoogleCampaignNegativeKeyword">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Member="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="nativeId" Member="NativeId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="maxCpc" Member="MaxCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="proxyMaxCpc" Member="ProxyMaxCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="text" Member="Text" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="type" Member="Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="destinationUrl" Member="DestinationUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="negative" Member="Negative" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="paused" Member="Paused" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="status" Member="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="firstPageCpc" Member="FirstPageCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="qualityScore" Member="QualityScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGoogleCampaignNegativeWebsite" Member="TblGoogleCampaignNegativeWebsite">
+    <Type Name="TblGoogleCampaignNegativeWebsite">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Member="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="nativeId" Member="NativeId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="maxCpc" Member="MaxCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="maxCpm" Member="MaxCpm" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="url" Member="Url" Type="System.String" DbType="NVarChar(2048) NOT NULL" CanBeNull="false" />
+      <Column Name="destinationUrl" Member="DestinationUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="negative" Member="Negative" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="paused" Member="Paused" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="status" Member="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGoogleKeyword" Member="TblGoogleKeyword">
+    <Type Name="TblGoogleKeyword">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalCampaignId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Member="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="NativeId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="maxCpc" Member="MaxCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="proxyMaxCpc" Member="ProxyMaxCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="text" Member="Text" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="type" Member="Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="destinationUrl" Member="DestinationUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="negative" Member="Negative" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="paused" Member="Paused" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="status" Member="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="firstPageCpc" Member="FirstPageCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="qualityScore" Member="QualityScore" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bids" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SystemServingStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ApprovalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="QualityInfo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="EnableTracking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGoogleSitelink" Member="TblGoogleSitelink">
+    <Type Name="TblGoogleSitelink">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="NativeId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="displayText" Member="DisplayText" Type="System.String" DbType="NVarChar(70)" CanBeNull="true" />
+      <Column Name="destinationUrl" Member="DestinationUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ApprovalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGoogleTextAd" Member="TblGoogleTextAd">
+    <Type Name="TblGoogleTextAd">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalCampaignId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Member="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="description1" Member="Description1" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="description2" Member="Description2" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="headline" Member="Headline" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="adType" Member="AdType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="destinationUrl" Member="DestinationUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="disapproved" Member="Disapproved" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="displayUrl" Member="DisplayUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="status" Member="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DisapproveReasons" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ApprovalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGoogleUser" Member="TblGoogleUser">
+    <Type Name="TblGoogleUser">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(128)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="UserAgent" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="DeveloperToken" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="ApplicationToken" Type="System.String" DbType="NVarChar(1024)" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblGoogleWebsite" Member="TblGoogleWebsite">
+    <Type Name="TblGoogleWebsite">
+      <Column Name="LocalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LocalState" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="LastUpdateTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AccountId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalCampaignId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="LocalId" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="id" Member="Id" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="NativeId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="TrackingId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="maxCpc" Member="MaxCpc" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="maxCpm" Member="MaxCpm" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="url" Member="Url" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="destinationUrl" Member="DestinationUrl" Type="System.String" DbType="NVarChar(2048)" CanBeNull="true" />
+      <Column Name="negative" Member="Negative" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="paused" Member="Paused" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="status" Member="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Bids" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="SystemServingStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="ApprovalStatus" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+      <Column Name="EnableTracking" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Version" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tblSequenceNumber" Member="TblSequenceNumber">
+    <Type Name="TblSequenceNumber">
+      <Column Name="Id" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EngineType" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

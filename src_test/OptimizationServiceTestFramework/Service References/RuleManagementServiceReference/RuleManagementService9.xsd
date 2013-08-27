@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.Facebook" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.Facebook" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" />
+  <xs:complexType name="FacebookConnectionDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q1:SEMBaseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Group" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GroupType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImageUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastPost" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LocalCampaignId" type="ser:guid" />
+          <xs:element minOccurs="0" name="LogoPath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LogoUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Posts" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SyncStatus" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Tabs" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TabsUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookConnectionDTO" nillable="true" type="tns:FacebookConnectionDTO" />
+  <xs:complexType name="FacebookTargetingDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q2:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Birthday" type="xs:int" />
+          <xs:element minOccurs="0" name="BroadAge" type="xs:int" />
+          <xs:element minOccurs="0" name="Cities" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CollegeMajors" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CollegeNetworks" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CollegeYearMax" type="xs:int" />
+          <xs:element minOccurs="0" name="CollegeYearMin" type="xs:int" />
+          <xs:element minOccurs="0" name="Countries" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CpcMax" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CpcMedian" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CpcMin" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CpmMax" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CpmMedian" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CpmMin" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CreativeConnections" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EducationStatuses" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnableTracking" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ExcludeConnections" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FriendsOfConnections" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Genders" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="InterestedIn" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="KeywordsTarget" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Locales" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MaxAge" type="xs:int" />
+          <xs:element minOccurs="0" name="MinAge" type="xs:int" />
+          <xs:element minOccurs="0" name="Radius" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RelationshipStatuses" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TargetingEstimation" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="UserAdClusters" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="WorkNetworks" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Zips" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookTargetingDTO" nillable="true" type="tns:FacebookTargetingDTO" />
+  <xs:complexType name="FacebookUserDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q3:SEMBaseDTO">
+        <xs:sequence>
+          <xs:element name="_x003C_Accesstoken_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_ApiKey_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_ApplicationId_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_ApplicationSecret_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_Email_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_ImagePath_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_ImageUrl_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_LastUpdateTime_x003E_k__BackingField" type="xs:dateTime" />
+          <xs:element name="_x003C_Password_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_SessionKey_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_SessionSecret_x003E_k__BackingField" nillable="true" type="xs:string" />
+          <xs:element name="_x003C_UserName_x003E_k__BackingField" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookUserDTO" nillable="true" type="tns:FacebookUserDTO" />
+  <xs:complexType name="FacebookAccountDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q4:SEMAccountBaseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Alias" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DailyAccountLimit" type="xs:int" />
+          <xs:element minOccurs="0" name="HoursOffset" type="xs:double" />
+          <xs:element minOccurs="0" name="LastDownloadDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" type="xs:int" />
+          <xs:element minOccurs="0" name="TimeZone" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookAccountDTO" nillable="true" type="tns:FacebookAccountDTO" />
+  <xs:complexType name="FacebookCampaignDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q5:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Budget" type="xs:decimal" />
+          <xs:element minOccurs="0" name="BudgetType" type="xs:int" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RotationId" type="xs:int" />
+          <xs:element minOccurs="0" name="StartTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" type="xs:int" />
+          <xs:element minOccurs="0" name="StopTime" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookCampaignDTO" nillable="true" type="tns:FacebookCampaignDTO" />
+  <xs:complexType name="FacebookAdDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q6:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdGroup" nillable="true" type="tns:FacebookAdGroupDTO" />
+          <xs:element minOccurs="0" name="BidType" type="xs:int" />
+          <xs:element minOccurs="0" name="Creative" nillable="true" type="tns:FacebookCreativeDTO" />
+          <xs:element minOccurs="0" name="MaxBid" type="xs:decimal" />
+          <xs:element minOccurs="0" name="RotationId" type="xs:int" />
+          <xs:element minOccurs="0" name="RotationName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" type="xs:int" />
+          <xs:element minOccurs="0" name="Targeting" nillable="true" type="tns:FacebookTargetingDTO" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookAdDTO" nillable="true" type="tns:FacebookAdDTO" />
+  <xs:complexType name="FacebookAdGroupDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q7:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BidType" type="xs:int" />
+          <xs:element minOccurs="0" name="DisapproveReason" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnableTracking" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MaxBid" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OriginalStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="Status" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookAdGroupDTO" nillable="true" type="tns:FacebookAdGroupDTO" />
+  <xs:complexType name="FacebookCreativeDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q8:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AutoUpdate" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Body" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConnectionId" type="xs:long" />
+          <xs:element minOccurs="0" name="CreativeId" type="xs:long" />
+          <xs:element minOccurs="0" name="ImageContent" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="ImageHash" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImagePath" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ImageUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LinkType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LinkUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PreviewUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StoryId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookCreativeDTO" nillable="true" type="tns:FacebookCreativeDTO" />
+</xs:schema>

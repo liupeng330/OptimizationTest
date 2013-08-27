@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6CB4347A-182E-4400-8DD0-08CEC3EBA471}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		OptimizationServiceTest.vsmdi = OptimizationServiceTest.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptimizationServiceTest", "OptimizationServiceTest\OptimizationServiceTest.csproj", "{DDD79974-E067-47AE-929B-4726D2473F2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptimizationServiceTestFramework", "OptimizationServiceTestFramework\OptimizationServiceTestFramework.csproj", "{4ECDF311-7FEB-464C-B35F-95DBF38ECBB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFramework", "TestFramework\TestFramework.csproj", "{1E279A52-C3D4-4963-B1E0-41E8FA1DB564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFP.Hosting.Optimization.Application", "..\src\010 OptimizationService\AFP.Hosting.Optimization.Application\AFP.Hosting.Optimization.Application.csproj", "{49C700A4-8D06-44C0-BE39-37B3D14F8506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFP.Hosting.Optimization.Model", "..\src\010 OptimizationService\AFP.Hosting.Optimization.Model\AFP.Hosting.Optimization.Model.csproj", "{75022AFE-76BC-48DF-B715-B6350AD8F695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFPHosting.Automation.Common.ServiceProxy", "..\src\010 OptimizationService\AFPHosting.Automation.Common.ServiceProxy\AFPHosting.Automation.Common.ServiceProxy.csproj", "{85125346-CFFC-4940-8281-EC6345C7019F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AFP.Hosting.Optimization.Common", "..\src\010 OptimizationService\AFP.Hosting.Optimization.Common\AFP.Hosting.Optimization.Common.csproj", "{9955958D-E1AB-42ED-8B4F-02915A7DC8D7}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = OptimizationServiceTest.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDD79974-E067-47AE-929B-4726D2473F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD79974-E067-47AE-929B-4726D2473F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD79974-E067-47AE-929B-4726D2473F2C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DDD79974-E067-47AE-929B-4726D2473F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD79974-E067-47AE-929B-4726D2473F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD79974-E067-47AE-929B-4726D2473F2C}.Release|x86.ActiveCfg = Release|Any CPU
+		{4ECDF311-7FEB-464C-B35F-95DBF38ECBB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECDF311-7FEB-464C-B35F-95DBF38ECBB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECDF311-7FEB-464C-B35F-95DBF38ECBB3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4ECDF311-7FEB-464C-B35F-95DBF38ECBB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECDF311-7FEB-464C-B35F-95DBF38ECBB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ECDF311-7FEB-464C-B35F-95DBF38ECBB3}.Release|x86.ActiveCfg = Release|Any CPU
+		{1E279A52-C3D4-4963-B1E0-41E8FA1DB564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E279A52-C3D4-4963-B1E0-41E8FA1DB564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E279A52-C3D4-4963-B1E0-41E8FA1DB564}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1E279A52-C3D4-4963-B1E0-41E8FA1DB564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E279A52-C3D4-4963-B1E0-41E8FA1DB564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E279A52-C3D4-4963-B1E0-41E8FA1DB564}.Release|x86.ActiveCfg = Release|Any CPU
+		{49C700A4-8D06-44C0-BE39-37B3D14F8506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C700A4-8D06-44C0-BE39-37B3D14F8506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C700A4-8D06-44C0-BE39-37B3D14F8506}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{49C700A4-8D06-44C0-BE39-37B3D14F8506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C700A4-8D06-44C0-BE39-37B3D14F8506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C700A4-8D06-44C0-BE39-37B3D14F8506}.Release|x86.ActiveCfg = Release|Any CPU
+		{75022AFE-76BC-48DF-B715-B6350AD8F695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75022AFE-76BC-48DF-B715-B6350AD8F695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75022AFE-76BC-48DF-B715-B6350AD8F695}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{75022AFE-76BC-48DF-B715-B6350AD8F695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75022AFE-76BC-48DF-B715-B6350AD8F695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75022AFE-76BC-48DF-B715-B6350AD8F695}.Release|x86.ActiveCfg = Release|Any CPU
+		{85125346-CFFC-4940-8281-EC6345C7019F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85125346-CFFC-4940-8281-EC6345C7019F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85125346-CFFC-4940-8281-EC6345C7019F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{85125346-CFFC-4940-8281-EC6345C7019F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85125346-CFFC-4940-8281-EC6345C7019F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85125346-CFFC-4940-8281-EC6345C7019F}.Release|x86.ActiveCfg = Release|Any CPU
+		{9955958D-E1AB-42ED-8B4F-02915A7DC8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9955958D-E1AB-42ED-8B4F-02915A7DC8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9955958D-E1AB-42ED-8B4F-02915A7DC8D7}.Debug|x86.ActiveCfg = Debug|x86
+		{9955958D-E1AB-42ED-8B4F-02915A7DC8D7}.Debug|x86.Build.0 = Debug|x86
+		{9955958D-E1AB-42ED-8B4F-02915A7DC8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9955958D-E1AB-42ED-8B4F-02915A7DC8D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9955958D-E1AB-42ED-8B4F-02915A7DC8D7}.Release|x86.ActiveCfg = Release|x86
+		{9955958D-E1AB-42ED-8B4F-02915A7DC8D7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Performance.Model.Facebook" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Performance.Model.Facebook" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Performance.Model" />
+  <xs:complexType name="FacebookPerformanceAdGroup">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FacebookPerformanceBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookPerformanceAdGroup" nillable="true" type="tns:FacebookPerformanceAdGroup" />
+  <xs:complexType name="FacebookPerformanceBase">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Performance.Model" base="q1:SEMObjectPerformance">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookPerformanceBase" nillable="true" type="tns:FacebookPerformanceBase" />
+  <xs:complexType name="FacebookPerformanceCampaign">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:FacebookPerformanceBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="FacebookPerformanceCampaign" nillable="true" type="tns:FacebookPerformanceCampaign" />
+</xs:schema>

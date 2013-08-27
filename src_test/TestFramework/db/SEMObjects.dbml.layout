@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 24, 23.5">
+  <DataContextMoniker Name="/SEMObjects" />
+  <nestedChildShapes>
+    <classShape Id="a3890e58-b3a6-41a3-bc75-741dcc812620" absoluteBounds="0.75, 0.75, 2, 6.1049905395507809">
+      <DataClassMoniker Name="/SEMObjects/TblAdCenterAccount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab6d1c93-e705-43fc-b7aa-b0da8052f726" absoluteBounds="0.765, 1.21, 1.9700000000000002, 5.5449905395507812" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8f072ed-496c-4c5e-9587-88fae5a682fc" absoluteBounds="3.75, 0.75, 2, 5.2186329142252594">
+      <DataClassMoniker Name="/SEMObjects/TblAdCenterAdGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="da7eddca-ba2a-4af4-978a-4f82515cdc48" absoluteBounds="3.765, 1.21, 1.9700000000000002, 4.65863291422526" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="af9ac438-1e86-4c53-95de-252e23d11b41" absoluteBounds="6.75, 0.75, 2, 4.8640898640950514">
+      <DataClassMoniker Name="/SEMObjects/TblAdCenterCampaign" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1bbfcbb3-05c8-4cde-9a22-6eba7f9cf59a" absoluteBounds="6.765, 1.21, 1.9700000000000002, 4.3040898640950518" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="686f2f81-bac4-4f3f-9242-16e539251707" absoluteBounds="3.75, 6.75, 2, 5.395904439290363">
+      <DataClassMoniker Name="/SEMObjects/TblAdCenterKeyword" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b322245c-286c-4df7-826d-04a8a37ff591" absoluteBounds="3.765, 7.21, 1.9700000000000002, 4.8359044392903643" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3fbe700e-bdf2-4ed2-bc01-97ef5c2d3a1b" absoluteBounds="6.75, 6.75, 2, 3.44591766357422">
+      <DataClassMoniker Name="/SEMObjects/TblAdCenterSitePlacement" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9488d67a-69e8-4fd1-880e-86eee8b90483" absoluteBounds="6.765, 7.21, 1.9700000000000002, 2.8859176635742188" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d6785f2a-ddd2-4d3c-b42b-146f86e7de5a" absoluteBounds="9.75, 0.75, 2, 4.1550037638346353">
+      <DataClassMoniker Name="/SEMObjects/TblAdCenterTextAd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b00d4bcd-05ce-420b-bca6-67246ef17d45" absoluteBounds="9.765, 1.21, 1.9700000000000002, 3.5950037638346357" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4f99b0c-4a0a-4cce-8e75-99eee460ba3e" absoluteBounds="9.75, 5.75, 2, 3.2686461385091139">
+      <DataClassMoniker Name="/SEMObjects/TblAdCenterUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aef432f6-a4d2-4fef-85d4-a4f9453a944a" absoluteBounds="9.765, 6.21, 1.9700000000000002, 2.7086461385091143" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19da1ddb-1eab-4fe6-87b8-2a62b3a3457e" absoluteBounds="9.75, 10.75, 2, 3.2686461385091121">
+      <DataClassMoniker Name="/SEMObjects/TblFacebookAccount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b97a727-bc5b-43b6-86ac-5a0710538880" absoluteBounds="9.765, 11.21, 1.9700000000000002, 2.7086461385091143" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f1282279-600f-4d4a-8250-17b556db2ccf" absoluteBounds="12.75, 0.75, 2, 3.6231891886393228">
+      <DataClassMoniker Name="/SEMObjects/TblFacebookAdGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e670881c-8d97-4d2b-b89f-3d8b9de50ee4" absoluteBounds="12.765, 1.21, 1.9700000000000002, 3.0631891886393228" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9d591547-9171-420e-9ccf-af0ee17fde85" absoluteBounds="12.75, 5.75, 2, 3.268646138509113">
+      <DataClassMoniker Name="/SEMObjects/TblFacebookCampaign" />
+      <nestedChildShapes>
+        <elementListCompartment Id="468c3e84-8feb-4761-81ae-74d808799463" absoluteBounds="12.765, 6.21, 1.9700000000000002, 2.7086461385091143" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6f9eea6-7952-4c95-ba56-a58faa934c70" absoluteBounds="12.75, 10.75, 2, 3.97773223876953">
+      <DataClassMoniker Name="/SEMObjects/TblFacebookConnection" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d097f379-a373-4b88-9c22-97ca3ec1c10a" absoluteBounds="12.765, 11.21, 1.9700000000000002, 3.4177322387695312" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bc777941-b970-48ca-900b-840c95bd3129" absoluteBounds="0.75, 13.75, 2, 3.2686461385091121">
+      <DataClassMoniker Name="/SEMObjects/TblFacebookCreative" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ba566230-6018-45b3-ae5b-4ef3bc41c0d3" absoluteBounds="0.765, 14.21, 1.9700000000000002, 2.7086461385091143" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d6fa00a-9f78-4513-a35d-aa2d02c56c43" absoluteBounds="3.75, 13.75, 2, 6.6368051147460942">
+      <DataClassMoniker Name="/SEMObjects/TblFacebookTargeting" />
+      <nestedChildShapes>
+        <elementListCompartment Id="34626a46-069d-45c3-99a5-367510e6bff9" absoluteBounds="3.765, 14.21, 1.9700000000000002, 6.0768051147460938" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="087670b4-dc14-4014-9cc8-df67e131900e" absoluteBounds="15.75, 0.75, 2, 3.8004607137044264">
+      <DataClassMoniker Name="/SEMObjects/TblFacebookUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="74ae1da9-b535-4188-8968-c150a2d23c4d" absoluteBounds="15.765, 1.21, 1.9700000000000002, 3.2404607137044268" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="719c7e65-6bb1-4a6e-975f-0635ce537540" absoluteBounds="15.75, 5.75, 2, 5.395904439290363">
+      <DataClassMoniker Name="/SEMObjects/TblGoogleAccountInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c4e95e3-1460-4c9e-ad90-f7eeda272c40" absoluteBounds="15.765, 6.21, 1.9700000000000002, 4.8359044392903643" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="367e2e01-eda1-4960-b3d9-3f2e6726e54f" absoluteBounds="6.75, 15.75, 2, 4.1550037638346353">
+      <DataClassMoniker Name="/SEMObjects/TblGoogleAdGroup" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f58edbb-1d3d-4796-9054-f637b188fbf6" absoluteBounds="6.765, 16.21, 1.9700000000000002, 3.5950037638346357" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ba52b45-476d-49e0-a859-397e1b0234bd" absoluteBounds="9.75, 15.75, 2, 5.3959044392903621">
+      <DataClassMoniker Name="/SEMObjects/TblGoogleCampaign" />
+      <nestedChildShapes>
+        <elementListCompartment Id="00b1c129-0d61-4089-9b94-b7542e892086" absoluteBounds="9.765, 16.21, 1.9700000000000002, 4.8359044392903643" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dafef356-6f00-4306-85cc-e0d9c7deaa4e" absoluteBounds="15.75, 12.75, 2, 4.5095468139648425">
+      <DataClassMoniker Name="/SEMObjects/TblGoogleCampaignNegativeKeyword" />
+      <nestedChildShapes>
+        <elementListCompartment Id="288b35fa-f977-43a3-9e3d-f6b0874f3a9a" absoluteBounds="15.765, 13.21, 1.9700000000000002, 3.9495468139648438" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dae4acd8-f760-4b18-94fd-d97a41aa5561" absoluteBounds="18.75, 0.75, 2, 3.9777322387695304">
+      <DataClassMoniker Name="/SEMObjects/TblGoogleCampaignNegativeWebsite" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64c82fe9-b85b-4dfa-b330-a56fd99ee5e5" absoluteBounds="18.765, 1.21, 1.9700000000000002, 3.4177322387695312" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="160854bb-3657-47d0-8ef7-78d90ec65f94" absoluteBounds="18.75, 5.75, 2, 5.5731759643554675">
+      <DataClassMoniker Name="/SEMObjects/TblGoogleKeyword" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ca76cc20-df54-4fff-a51f-8520117ed2fd" absoluteBounds="18.765, 6.21, 1.9700000000000002, 5.0131759643554688" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9276e65b-94c3-46be-8c2c-a43f46a0123e" absoluteBounds="18.75, 12.75, 2, 3.445917663574221">
+      <DataClassMoniker Name="/SEMObjects/TblGoogleSitelink" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dfbe9d53-d70e-4f22-86fe-61ae6be78a5e" absoluteBounds="18.765, 13.21, 1.9700000000000002, 2.8859176635742188" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a5627e8d-e4d6-4bcc-aa28-9c84c7ff9960" absoluteBounds="12.75, 18.75, 2, 4.509546813964846">
+      <DataClassMoniker Name="/SEMObjects/TblGoogleTextAd" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1a7c4928-d15b-4d29-8c15-af5eb53abc73" absoluteBounds="12.765, 19.21, 1.9700000000000002, 3.9495468139648438" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="acc58626-ccb6-4643-aa44-6aa0938e9427" absoluteBounds="15.75, 18.75, 2, 3.0913746134440103">
+      <DataClassMoniker Name="/SEMObjects/TblGoogleUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="acebfe31-12df-4719-8552-80e97ac25650" absoluteBounds="15.765, 19.21, 1.9700000000000002, 2.5313746134440103" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c8be05d0-07ea-4d7a-a710-bebe0f704130" absoluteBounds="18.75, 17.75, 2, 4.86408986409505">
+      <DataClassMoniker Name="/SEMObjects/TblGoogleWebsite" />
+      <nestedChildShapes>
+        <elementListCompartment Id="039ecec5-896a-4fde-9bc5-b88e230e31d4" absoluteBounds="18.765, 18.21, 1.9700000000000002, 4.3040898640950518" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="11730ca2-40eb-4337-8178-8ebccfef7d12" absoluteBounds="21.75, 0.75, 2, 1.1413878377278648">
+      <DataClassMoniker Name="/SEMObjects/TblSequenceNumber" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9dacb9c2-0181-4eae-ba64-6e3bbbef1924" absoluteBounds="21.765, 1.21, 1.9700000000000002, 0.58138783772786451" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

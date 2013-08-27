@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4ECDF311-7FEB-464C-B35F-95DBF38ECBB3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OptimizationService.Test.Framework</RootNamespace>
+    <AssemblyName>OptimizationService.Test.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdSage.Concert.CronHelper">
+      <HintPath>..\lib\AdSage.Concert.CronHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OptimizationServiceTestHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\RuleManagementServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestFramework\TestFramework.csproj">
+      <Project>{1E279A52-C3D4-4963-B1E0-41E8FA1DB564}</Project>
+      <Name>TestFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\OptimizationService.Test.Framework.RuleManagementServiceReference.RuleSetDefinition.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\OptimizationService.Test.Framework.RuleManagementServiceReference.RuleSetInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\OptimizationService.Test.Framework.RuleManagementServiceReference.RuleSetResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService1.wsdl" />
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService131.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService1310.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService1311.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService1312.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService1313.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService132.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService133.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService134.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService135.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService136.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService137.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService138.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService139.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\RuleManagementServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RuleManagementServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RuleManagementServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RuleManagementServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\RuleManagementServiceReference\RuleManagementService1.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

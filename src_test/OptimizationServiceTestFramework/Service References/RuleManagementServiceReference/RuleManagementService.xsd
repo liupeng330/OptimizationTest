@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd2" namespace="http://AFP.Hosting.Optimization.Application/RuleModel" />
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="CreateAutoRuleSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="advertiserId" type="xs:long" />
+        <xs:element xmlns:q1="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="ruleSet" nillable="true" type="q1:RuleSetDefinition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateAutoRuleSetResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateAutoRuleSetResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RenameRule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="aRuleSetId" type="xs:int" />
+        <xs:element minOccurs="0" name="aName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="aDescription" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RenameRuleResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCopy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="advertiserId" type="xs:long" />
+        <xs:element minOccurs="0" name="ruleSetId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCopyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="CreateCopyResult" nillable="true" type="q2:RuleSetDefinition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetDetailByID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ruleSetId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetDetailByIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="GetRuleSetDetailByIDResult" nillable="true" type="q3:RuleSetDefinition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetInfos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="advertiserId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetInfosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="GetRuleSetInfosResult" nillable="true" type="q4:ArrayOfRuleSetInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetInfoById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ruleSetId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetInfoByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="GetRuleSetInfoByIdResult" nillable="true" type="q5:RuleSetInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSets">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="advertiserId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="GetRuleSetsResult" nillable="true" type="q6:ArrayOfRuleSetDefinition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRuleSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="ruleSet" nillable="true" type="q7:RuleSetDefinition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateRuleSetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRuleSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ruleSetId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteRuleSetResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objecttype" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetTemplateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="GetRuleSetTemplateResult" nillable="true" type="q8:ArrayOfRuleSetDefinition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPreviewResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="jobId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPreviewResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="GetPreviewResultResult" nillable="true" type="q9:ArrayOfRuleSetResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePreview">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="afpUserId" nillable="true" type="xs:string" />
+        <xs:element xmlns:q10="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="def" nillable="true" type="q10:RuleSetDefinition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreatePreviewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreatePreviewResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPreviewStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="afpUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="jobId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPreviewStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetPreviewStatusResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ruleSetId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRuleSetResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="GetRuleSetResultResult" nillable="true" type="q11:ArrayOfRuleSetResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ManualStartByRuleSetId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="afpUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ruleSetId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ManualStartByRuleSetIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ManualStartByRuleSetIdResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateRotationDefinition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="aUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="aName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="aAccountId" type="xs:long" />
+        <xs:element minOccurs="0" name="aRotationId" type="xs:int" />
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="aAdGroupId" nillable="true" type="q12:ArrayOflong" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateRotationDefinitionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://AFP.Hosting.Optimization.Application/RuleModel" minOccurs="0" name="CreateRotationDefinitionResult" nillable="true" type="q13:RuleSetDefinition" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmStart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="afpUserId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ruleDefinitionContent" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ruleSetId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmStartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmStartResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastRuleSetSummaryLogStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ruleSetId" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLastRuleSetSummaryLogStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetLastRuleSetSummaryLogStatusResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://AFP.Hosting.Optimization.Application/RuleModel" elementFormDefault="qualified" targetNamespace="http://AFP.Hosting.Optimization.Application/RuleModel" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/AFP.Hosting.Optimization.Model.RuleModel" />
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.OnlineService" />
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" />
+  <xs:complexType name="RuleSetDefinition">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Content" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpireTo" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastRun" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ModifiedTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Parameters" nillable="true" type="tns:ArrayOfRuleSetParameter" />
+      <xs:element minOccurs="0" name="RuleSetStatus" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/AFP.Hosting.Optimization.Model.RuleModel" minOccurs="0" name="RuleType" type="q1:RuleSetTypes" />
+      <xs:element minOccurs="0" name="RulesetID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidFrom" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RuleSetDefinition" nillable="true" type="tns:RuleSetDefinition" />
+  <xs:complexType name="ArrayOfRuleSetParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RuleSetParameter" nillable="true" type="tns:RuleSetParameter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRuleSetParameter" nillable="true" type="tns:ArrayOfRuleSetParameter" />
+  <xs:complexType name="RuleSetParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RuleSetParameter" nillable="true" type="tns:RuleSetParameter" />
+  <xs:complexType name="ArrayOfRuleSetInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RuleSetInfo" nillable="true" type="tns:RuleSetInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRuleSetInfo" nillable="true" type="tns:ArrayOfRuleSetInfo" />
+  <xs:complexType name="RuleSetInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APFUserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:long" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NextExecuteTime" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ObjectLevel" type="xs:int" />
+      <xs:element minOccurs="0" name="OptimizationNum" type="xs:int" />
+      <xs:element minOccurs="0" name="Parameters" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PropretyType" type="xs:int" />
+      <xs:element minOccurs="0" name="RuleSetStatus" type="xs:int" />
+      <xs:element minOccurs="0" name="SEUserName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RuleSetInfo" nillable="true" type="tns:RuleSetInfo" />
+  <xs:complexType name="ArrayOfRuleSetDefinition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RuleSetDefinition" nillable="true" type="tns:RuleSetDefinition" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRuleSetDefinition" nillable="true" type="tns:ArrayOfRuleSetDefinition" />
+  <xs:complexType name="ArrayOfRuleSetResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RuleSetResult" nillable="true" type="tns:RuleSetResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRuleSetResult" nillable="true" type="tns:ArrayOfRuleSetResult" />
+  <xs:complexType name="RuleSetResult">
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.OnlineService" minOccurs="0" name="ErrorData" nillable="true" type="q2:FailObject" />
+      <xs:element minOccurs="0" name="LocalId" type="xs:long" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" minOccurs="0" name="Original" nillable="true" type="q3:SEMBaseDTO" />
+      <xs:element minOccurs="0" name="OriginalObject" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" minOccurs="0" name="SemObjet" nillable="true" type="q4:SEMBaseDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RuleSetResult" nillable="true" type="tns:RuleSetResult" />
+</xs:schema>

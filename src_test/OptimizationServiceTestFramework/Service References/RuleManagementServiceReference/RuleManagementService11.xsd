@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.Google" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.Google" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" />
+  <xs:complexType name="GoogleUserDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q1:SEMBaseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ApplicationToken" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DeveloperToken" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="UserAgent" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GoogleUserDTO" nillable="true" type="tns:GoogleUserDTO" />
+  <xs:complexType name="GoogleAccountInfoDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q2:SEMAccountBaseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BillingAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ClientEmail" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="CustomerIdSpecified" type="xs:boolean" />
+          <xs:element minOccurs="0" name="DescriptiveName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailPromotionsPreferences" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IsContentType" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LanguagePreference" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastDownloadDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="PrimaryAddress" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PrimaryBusinessCategory" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SearchType" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TimeZoneEffectiveDate" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="TimeZoneEffectiveDateSpecified" type="xs:boolean" />
+          <xs:element minOccurs="0" name="TimeZoneId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GoogleAccountInfoDTO" nillable="true" type="tns:GoogleAccountInfoDTO" />
+  <xs:complexType name="GoogleCampaignDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q3:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdServingOptimizationStatus" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="AutoKeywordMatchingStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="BiddingStrategy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BudgetAmount" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="BudgetPeriod" type="xs:int" />
+          <xs:element minOccurs="0" name="EndDay" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FrequencyCap" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GeoTargeting" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LanguageTargeting" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NetworkTargeting" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Schedule" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SearchType" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="ServingStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="StartDay" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Targeting" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GoogleCampaignDTO" nillable="true" type="tns:GoogleCampaignDTO" />
+  <xs:complexType name="GoogleAdGroupDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q4:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Bids" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="KeywordContentMaxCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="KeywordMaxCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MaxCpa" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProxyKeywordMaxCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SiteMaxCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SiteMaxCpm" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GoogleAdGroupDTO" nillable="true" type="tns:GoogleAdGroupDTO" />
+  <xs:complexType name="GoogleKeywordDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q5:SEMOrderItemDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ApprovalStatus" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnableTracking" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FirstPageCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LocalCampaignId" type="xs:long" />
+          <xs:element minOccurs="0" name="MaxCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="NativeId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Negative" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Paused" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ProxyMaxCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="QualityInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="QualityScore" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="SystemServingStatus" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GoogleKeywordDTO" nillable="true" type="tns:GoogleKeywordDTO" />
+  <xs:complexType name="GoogleSitelinkDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q6:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ApprovalStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayText" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LocalCampaignId" type="xs:long" />
+          <xs:element minOccurs="0" name="NativeId" type="xs:long" />
+          <xs:element minOccurs="0" name="Status" type="xs:int" />
+          <xs:element minOccurs="0" name="TrackingId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GoogleSitelinkDTO" nillable="true" type="tns:GoogleSitelinkDTO" />
+  <xs:complexType name="GoogleCampaignNegativeKeywordDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q7:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="FirstPageCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MaxCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="NativeId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Negative" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Paused" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ProxyMaxCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="QualityScore" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Type" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GoogleCampaignNegativeKeywordDTO" nillable="true" type="tns:GoogleCampaignNegativeKeywordDTO" />
+  <xs:complexType name="GoogleCampaignNegativeWebsiteDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q8:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MaxCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="MaxCpm" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="NativeId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Negative" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Paused" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GoogleCampaignNegativeWebsiteDTO" nillable="true" type="tns:GoogleCampaignNegativeWebsiteDTO" />
+  <xs:complexType name="GoogleWebsiteDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q9:SEMOrderItemDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ApprovalStatus" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnableTracking" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LocalCampaignId" type="xs:long" />
+          <xs:element minOccurs="0" name="MaxCpc" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="MaxCpm" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="NativeId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Negative" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Paused" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="SystemServingStatus" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GoogleWebsiteDTO" nillable="true" type="tns:GoogleWebsiteDTO" />
+  <xs:complexType name="GoogleTextAdDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q10:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdType" type="xs:int" />
+          <xs:element minOccurs="0" name="ApprovalStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="Description1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Description2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisapproveReasons" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Disapproved" type="xs:boolean" />
+          <xs:element minOccurs="0" name="DisplayUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Headline" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LocalCampaignId" type="xs:long" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GoogleTextAdDTO" nillable="true" type="tns:GoogleTextAdDTO" />
+</xs:schema>

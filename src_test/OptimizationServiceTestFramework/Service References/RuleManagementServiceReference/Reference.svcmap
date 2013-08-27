@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c0ecfdc4-6d2a-49a7-a7c5-791053ac703d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="RuleManagementService13.xsd" MetadataType="Schema" ID="7a0da557-5129-471b-a7bb-1a42801689d9" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd11" />
+    <MetadataFile FileName="RuleManagementService1.wsdl" MetadataType="Wsdl" ID="ebb81065-c917-4eb2-8179-435f9b6f4fd3" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?wsdl" />
+    <MetadataFile FileName="RuleManagementService131.xsd" MetadataType="Schema" ID="bdd20deb-3495-4b75-b882-60c2dc3d0ab0" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd12" />
+    <MetadataFile FileName="RuleManagementService132.xsd" MetadataType="Schema" ID="d8adb232-6ef1-42ec-92fe-91ced811fe7e" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd13" />
+    <MetadataFile FileName="RuleManagementService1.disco" MetadataType="Disco" ID="05d8648c-09ba-437e-8a28-a80f174e0698" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?disco" />
+    <MetadataFile FileName="RuleManagementService133.xsd" MetadataType="Schema" ID="dd027d31-b510-4592-aedf-c68e3aaab28f" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd8" />
+    <MetadataFile FileName="RuleManagementService134.xsd" MetadataType="Schema" ID="33137780-e76f-4521-a4dd-60939d7199d7" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd9" />
+    <MetadataFile FileName="RuleManagementService135.xsd" MetadataType="Schema" ID="fe212d15-19d4-48f9-a1d9-ca48fa0465ac" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd10" />
+    <MetadataFile FileName="RuleManagementService136.xsd" MetadataType="Schema" ID="7797f95a-9703-4124-9272-34994762c593" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd2" />
+    <MetadataFile FileName="RuleManagementService137.xsd" MetadataType="Schema" ID="d27326bf-ecbe-40b2-a0c9-f2bfb5fb1428" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd3" />
+    <MetadataFile FileName="RuleManagementService138.xsd" MetadataType="Schema" ID="d2dfe041-dc5b-4524-bdf3-b7a5982d59d6" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd0" />
+    <MetadataFile FileName="RuleManagementService139.xsd" MetadataType="Schema" ID="acf1a486-51fb-454c-a14c-a5c2a5976be0" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd1" />
+    <MetadataFile FileName="RuleManagementService1310.xsd" MetadataType="Schema" ID="fd1b81e6-0660-4ba4-b8b8-2087644a8654" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd6" />
+    <MetadataFile FileName="RuleManagementService1311.xsd" MetadataType="Schema" ID="3941a349-7791-4e5f-9e3a-48b574cd391e" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd7" />
+    <MetadataFile FileName="RuleManagementService1312.xsd" MetadataType="Schema" ID="ffecdda8-c807-4697-b511-59e178f2b461" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd4" />
+    <MetadataFile FileName="RuleManagementService1313.xsd" MetadataType="Schema" ID="b65c6f9a-cc6f-4570-8dcb-8cd31e3badac" SourceId="1" SourceUrl="http://172.16.19.15:9004/RuleManagementService/RuleManagementService.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

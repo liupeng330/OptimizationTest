@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.AdCenter" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.AdCenter" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" />
+  <xs:complexType name="AdCenterUserDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q1:SEMBaseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ApplicationToken" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CustomerId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="DeveloperToken" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="UserAccessKey" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AdCenterUserDTO" nillable="true" type="tns:AdCenterUserDTO" />
+  <xs:complexType name="AdCenterAccountDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q2:SEMAccountBaseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountNumber" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AccountType" type="xs:int" />
+          <xs:element minOccurs="0" name="AgencyContactName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgencyContractName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AgencyCustomerId" type="xs:long" />
+          <xs:element minOccurs="0" name="BillToCustomerId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="CountryCode" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CurrencyType" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="FinancialStatus" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="LastDownloadDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ParentCustomerId" type="xs:long" />
+          <xs:element minOccurs="0" name="PaymentMethodId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="PaymentMethodType" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PrimaryUserId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="SalesHouseCustomerId" type="xs:long" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="TimeZone" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AdCenterAccountDTO" nillable="true" type="tns:AdCenterAccountDTO" />
+  <xs:complexType name="AdCenterCampaignDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q3:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BudgetType" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CashBackInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ConversionTrackingEnabled" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="ConversionTrackingScript" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DailyBudget" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="DaylightSaving" nillable="true" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="MonthlyBudget" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NegativeKeywords" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NegativeSiteUrls" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Target" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TimeZone" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AdCenterCampaignDTO" nillable="true" type="tns:AdCenterCampaignDTO" />
+  <xs:complexType name="AdCenterAdGroupDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q4:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AdDistribution" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="BiddingModel" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="CashbackInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContentMatchBid" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LanguageAndRegion" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NegativeKeywords" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NegativeSiteUrls" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Network" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="PricingModel" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="SearchMatchBid" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Target" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AdCenterAdGroupDTO" nillable="true" type="tns:AdCenterAdGroupDTO" />
+  <xs:complexType name="AdCenterSitePlacementDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q5:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Bid" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LocalCampaignId" type="xs:long" />
+          <xs:element minOccurs="0" name="PlacementId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Url" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AdCenterSitePlacementDTO" nillable="true" type="tns:AdCenterSitePlacementDTO" />
+  <xs:complexType name="AdCenterTextAdDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q6:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DisplayUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EditorialStatus" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="EnableTracking" type="xs:boolean" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LocalCampaignId" type="xs:long" />
+          <xs:element minOccurs="0" name="Status" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+          <xs:element minOccurs="0" name="Type" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AdCenterTextAdDTO" nillable="true" type="tns:AdCenterTextAdDTO" />
+  <xs:complexType name="AdCenterKeywordDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" base="q7:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BroadMatchBid" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="CashBackInfo" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ContentMatchBid" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="EditorialStatus" type="xs:int" />
+          <xs:element minOccurs="0" name="ExactMatchBid" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="LastUpdateTime" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LocalCampaignId" type="xs:long" />
+          <xs:element minOccurs="0" name="MatchType" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="NegativeKeywords" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="OverridePriority" type="xs:int" />
+          <xs:element minOccurs="0" name="Param1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Param2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Param3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PhraseMatchBid" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="SearchMatchBid" nillable="true" type="xs:double" />
+          <xs:element minOccurs="0" name="Status" type="xs:int" />
+          <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TrackingId" nillable="true" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AdCenterKeywordDTO" nillable="true" type="tns:AdCenterKeywordDTO" />
+</xs:schema>

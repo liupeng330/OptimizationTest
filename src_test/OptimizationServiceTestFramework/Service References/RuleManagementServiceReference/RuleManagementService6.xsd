@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Performance.Model" />
+  <xs:complexType name="SEMBaseDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EngineType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="LocalId" type="xs:long" />
+      <xs:element minOccurs="0" name="LocalParentId" type="xs:long" />
+      <xs:element minOccurs="0" name="LocalState" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="LocalStatus" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ParentDTO" nillable="true" type="tns:SEMBaseDTO" />
+      <xs:element minOccurs="0" name="ParentId" type="xs:long" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Performance.Model" minOccurs="0" name="Performance" nillable="true" type="q1:SEMObjectPerformance" />
+      <xs:element minOccurs="0" name="SynState" type="tns:SyncState" />
+      <xs:element minOccurs="0" name="Version" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SEMBaseDTO" nillable="true" type="tns:SEMBaseDTO" />
+  <xs:simpleType name="SyncState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Created" />
+      <xs:enumeration value="Deleted" />
+      <xs:enumeration value="Updated" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SyncState" nillable="true" type="tns:SyncState" />
+  <xs:complexType name="SEMAccountBaseDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SEMBaseDTO">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SEMAccountBaseDTO" nillable="true" type="tns:SEMAccountBaseDTO" />
+  <xs:complexType name="SEMAdObjectDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SEMBaseDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountId" type="xs:long" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SEMAdObjectDTO" nillable="true" type="tns:SEMAdObjectDTO" />
+  <xs:complexType name="SEMOrderItemDTO">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:SEMAdObjectDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Bids" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="DestinationUrl" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EnableTracking" type="xs:boolean" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SEMOrderItemDTO" nillable="true" type="tns:SEMOrderItemDTO" />
+</xs:schema>

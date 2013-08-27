@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="RuleManagementService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_IRuleManagementService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd2" namespace="http://AFP.Hosting.Optimization.Application/RuleModel" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/AFP.Hosting.Optimization.Model.RuleModel" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.OnlineService" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd7" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd8" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Performance.Model" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd9" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Performance.Model.Facebook" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd10" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.Facebook" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd11" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.AdCenter" />
+      <xsd:import schemaLocation="http://localhost/RuleManagementService/RuleManagementService.svc?xsd=xsd12" namespace="http://schemas.datacontract.org/2004/07/AdSage.Concert.Hosting.Application.DTO.Google" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IRuleManagementService_CreateAutoRuleSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAutoRuleSet" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_CreateAutoRuleSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateAutoRuleSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_RenameRule_InputMessage">
+    <wsdl:part name="parameters" element="tns:RenameRule" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_RenameRule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RenameRuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_CreateCopy_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCopy" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_CreateCopy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCopyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSetDetailByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetDetailByID" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSetDetailByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetDetailByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSetInfos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetInfos" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSetInfos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetInfosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSetInfoById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetInfoById" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSetInfoById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetInfoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSets_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSets" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSets_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_UpdateRuleSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRuleSet" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_UpdateRuleSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRuleSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_DeleteRuleSet_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRuleSet" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_DeleteRuleSet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRuleSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSetTemplate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetTemplate" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSetTemplate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetTemplateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetPreviewResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreviewResult" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetPreviewResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreviewResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_CreatePreview_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePreview" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_CreatePreview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreatePreviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetPreviewStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreviewStatus" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetPreviewStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPreviewStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSetResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetResult" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetRuleSetResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetRuleSetResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_ManualStartByRuleSetId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ManualStartByRuleSetId" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_ManualStartByRuleSetId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ManualStartByRuleSetIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_CreateRotationDefinition_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRotationDefinition" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_CreateRotationDefinition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRotationDefinitionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_ConfirmStart_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmStart" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_ConfirmStart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmStartResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetLastRuleSetSummaryLogStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastRuleSetSummaryLogStatus" />
+  </wsdl:message>
+  <wsdl:message name="IRuleManagementService_GetLastRuleSetSummaryLogStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLastRuleSetSummaryLogStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IRuleManagementService">
+    <wsdl:operation name="CreateAutoRuleSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/CreateAutoRuleSet" message="tns:IRuleManagementService_CreateAutoRuleSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/CreateAutoRuleSetResponse" message="tns:IRuleManagementService_CreateAutoRuleSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RenameRule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/RenameRule" message="tns:IRuleManagementService_RenameRule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/RenameRuleResponse" message="tns:IRuleManagementService_RenameRule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCopy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/CreateCopy" message="tns:IRuleManagementService_CreateCopy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/CreateCopyResponse" message="tns:IRuleManagementService_CreateCopy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSetDetailByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetDetailByID" message="tns:IRuleManagementService_GetRuleSetDetailByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetDetailByIDResponse" message="tns:IRuleManagementService_GetRuleSetDetailByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSetInfos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetInfos" message="tns:IRuleManagementService_GetRuleSetInfos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetInfosResponse" message="tns:IRuleManagementService_GetRuleSetInfos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSetInfoById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetInfoById" message="tns:IRuleManagementService_GetRuleSetInfoById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetInfoByIdResponse" message="tns:IRuleManagementService_GetRuleSetInfoById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSets">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSets" message="tns:IRuleManagementService_GetRuleSets_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetsResponse" message="tns:IRuleManagementService_GetRuleSets_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRuleSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/UpdateRuleSet" message="tns:IRuleManagementService_UpdateRuleSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/UpdateRuleSetResponse" message="tns:IRuleManagementService_UpdateRuleSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRuleSet">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/DeleteRuleSet" message="tns:IRuleManagementService_DeleteRuleSet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/DeleteRuleSetResponse" message="tns:IRuleManagementService_DeleteRuleSet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSetTemplate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetTemplate" message="tns:IRuleManagementService_GetRuleSetTemplate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetTemplateResponse" message="tns:IRuleManagementService_GetRuleSetTemplate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviewResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/GetPreviewResult" message="tns:IRuleManagementService_GetPreviewResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/GetPreviewResultResponse" message="tns:IRuleManagementService_GetPreviewResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreatePreview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/CreatePreview" message="tns:IRuleManagementService_CreatePreview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/CreatePreviewResponse" message="tns:IRuleManagementService_CreatePreview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviewStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/GetPreviewStatus" message="tns:IRuleManagementService_GetPreviewStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/GetPreviewStatusResponse" message="tns:IRuleManagementService_GetPreviewStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSetResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetResult" message="tns:IRuleManagementService_GetRuleSetResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/GetRuleSetResultResponse" message="tns:IRuleManagementService_GetRuleSetResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ManualStartByRuleSetId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/ManualStartByRuleSetId" message="tns:IRuleManagementService_ManualStartByRuleSetId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/ManualStartByRuleSetIdResponse" message="tns:IRuleManagementService_ManualStartByRuleSetId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRotationDefinition">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/CreateRotationDefinition" message="tns:IRuleManagementService_CreateRotationDefinition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/CreateRotationDefinitionResponse" message="tns:IRuleManagementService_CreateRotationDefinition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmStart">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/ConfirmStart" message="tns:IRuleManagementService_ConfirmStart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/ConfirmStartResponse" message="tns:IRuleManagementService_ConfirmStart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastRuleSetSummaryLogStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRuleManagementService/GetLastRuleSetSummaryLogStatus" message="tns:IRuleManagementService_GetLastRuleSetSummaryLogStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRuleManagementService/GetLastRuleSetSummaryLogStatusResponse" message="tns:IRuleManagementService_GetLastRuleSetSummaryLogStatus_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_IRuleManagementService" type="tns:IRuleManagementService">
+    <wsp:PolicyReference URI="#WSHttpBinding_IRuleManagementService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateAutoRuleSet">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/CreateAutoRuleSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RenameRule">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/RenameRule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateCopy">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/CreateCopy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSetDetailByID">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/GetRuleSetDetailByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSetInfos">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/GetRuleSetInfos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSetInfoById">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/GetRuleSetInfoById" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSets">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/GetRuleSets" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRuleSet">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/UpdateRuleSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRuleSet">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/DeleteRuleSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSetTemplate">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/GetRuleSetTemplate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviewResult">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/GetPreviewResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreatePreview">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/CreatePreview" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPreviewStatus">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/GetPreviewStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRuleSetResult">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/GetRuleSetResult" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ManualStartByRuleSetId">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/ManualStartByRuleSetId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRotationDefinition">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/CreateRotationDefinition" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmStart">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/ConfirmStart" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastRuleSetSummaryLogStatus">
+      <soap12:operation soapAction="http://tempuri.org/IRuleManagementService/GetLastRuleSetSummaryLogStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RuleManagementService">
+    <wsdl:port name="WSHttpBinding_IRuleManagementService" binding="tns:WSHttpBinding_IRuleManagementService">
+      <soap12:address location="http://localhost/RuleManagementService/RuleManagementService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost/RuleManagementService/RuleManagementService.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
